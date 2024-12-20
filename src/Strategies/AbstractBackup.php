@@ -122,4 +122,16 @@ abstract class AbstractBackup implements StrategyInterface
         }
         return $removed;
     }
+
+    public function purge(string $pack_name): int
+    {
+        $removed = 0;
+        $files = $this->readBackups($pack_name);
+        foreach ($files as $older) {
+            if (unlink($older)) {
+                $removed++;
+            }
+        }
+        return $removed;
+    }
 }

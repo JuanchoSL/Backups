@@ -21,14 +21,18 @@ class CleanCommand extends Command
     protected function configure(): void
     {
         $this->addArgument('destiny', InputArgument::REQUIRED, InputOption::SINGLE);
-        $this->addArgument('copies', InputArgument::REQUIRED, InputOption::SINGLE);
+        $this->addArgument('copies', InputArgument::OPTIONAL, InputOption::SINGLE);
     }
 
     protected function execute(InputInterface $input): int
     {
         $obj = new BackupNumIncremental();
-        $obj->setNumBackups((int) $input->getArgument('copies'));
-        $this->write($obj->cleanOlders($input->getArgument('destiny')));
+        if ($input->hasArgument('copies') && $input->getArgument('copies') > 0) {
+            $obj->setNumBackups((int) $input->getArgument('copies'));
+            $this->write($obj->cleanOlders($input->getArgument('destiny')));
+        } else {
+            $this->write($obj->purge($input->getArgument('destiny')));
+        }
         return 0;
     }
 }

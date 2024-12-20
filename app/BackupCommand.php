@@ -25,19 +25,25 @@ class BackupCommand extends Command
         $this->addArgument('destiny', InputArgument::REQUIRED, InputOption::SINGLE);
         $this->addArgument('excluded', InputArgument::OPTIONAL, InputOption::MULTI);
         $this->addArgument('copies', InputArgument::OPTIONAL, InputOption::SINGLE);
+        $this->addArgument('basename', InputArgument::OPTIONAL, InputOption::SINGLE);
     }
 
     protected function execute(InputInterface $input): int
     {
         $parent = $input->getArgument('origin');
         $obj = new BackupNumIncremental();
-        $obj->setNumBackups((int) $input->getArgument('copies'));
         $obj->setEngine(new ZipEngine());
         $obj->setDestinationFolder($parent . DIRECTORY_SEPARATOR . $input->getArgument('destiny'));
-        foreach($input->getArgument('excluded') as $excluded){
-            $obj->addExcludedDir($parent . DIRECTORY_SEPARATOR . $excluded);
+        if ($input->hasArgument('excluded')) {
+            foreach ($input->getArgument('excluded') as $excluded) {
+                $obj->addExcludedDir($parent . DIRECTORY_SEPARATOR . $excluded);
+            }
         }
-        $this->write($obj->pack($parent));
+        if ($input->hasArgument('copies')) {
+            $obj->setNumBackups((int) $input->getArgument('copies'));
+        }
+        $basename = $input->hasArgument('basename') ? $input->getArgument('basename') : null;
+        $this->write($obj->pack($parent, $basename));
         return 0;
     }
 }
