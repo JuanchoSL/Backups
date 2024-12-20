@@ -1,0 +1,55 @@
+{
+    "name": "juanchosl/backups",
+    "description": "Little methods collection in order to create distincts type of backups",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/JuanchoSL/Backups",
+    "minimum-stability": "stable",
+    "keywords": [
+        "backup",
+        "zip"
+    ],
+    "authors": [
+        {
+            "name": "Juan Sánchez Lecegui",
+            "email": "JuanchoSL@hotmail.com",
+            "homepage": "https://github.com/JuanchoSL/"
+        }
+    ],
+    "suggest": {
+        "ext-zip": "*",
+        "ext-xlswriter": "*"
+    },
+    "bin":["bin/backup"],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/juanchosl/terminal"
+        }
+    ],
+    "require": {
+        "php": "^7.1 || ^8.0",
+        "juanchosl/exceptions": "1.0.*",
+        "juanchosl/terminal": "dev-master"
+    },
+    "require-dev": {
+        "juanchosl/logger": "1.1.*",
+        "phpstan/phpstan": "1.12.*",
+        "phpunit/phpunit": "9.6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "JuanchoSL\\Backups\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JuanchoSL\\Backups\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "tests": "vendor/bin/phpunit --configuration phpunit.xml tests",
+        "phpstan": "vendor/bin/phpstan analyse -c phpstan.neon"
+    }
+}
