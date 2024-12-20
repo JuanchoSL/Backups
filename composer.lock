@@ -4,61 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e8272a7f7481380b7411f52edac18500",
+    "content-hash": "74199696dda068a4befd4bc2f18f2176",
     "packages": [
-        {
-            "name": "juanchosl/envvars",
-            "version": "1.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/JuanchoSL/EnvVars.git",
-                "reference": "66d1644bb95f683c822a570061aafb6829170be4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/JuanchoSL/EnvVars/zipball/66d1644bb95f683c822a570061aafb6829170be4",
-                "reference": "66d1644bb95f683c822a570061aafb6829170be4",
-                "shasum": ""
-            },
-            "require": {
-                "ext-fileinfo": "*",
-                "ext-mbstring": "*",
-                "juanchosl/exceptions": "^1.0",
-                "php": "^7.1 || ^8.0"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "1.9.1",
-                "phpunit/phpunit": "9.6.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "JuanchoSL\\EnvVars\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Juan Sánchez Lecegui",
-                    "email": "JuanchoSL@hotmail.com",
-                    "homepage": "https://github.com/JuanchoSL/"
-                }
-            ],
-            "description": "A small, lightweight utility to read ENV files and append his content to environment variables",
-            "homepage": "https://github.com/JuanchoSL/EnvVars",
-            "keywords": [
-                "env",
-                "environment",
-                "envvars"
-            ],
-            "support": {
-                "source": "https://github.com/JuanchoSL/EnvVars/tree/1.0.6"
-            },
-            "time": "2024-01-21T01:48:50+00:00"
-        },
         {
             "name": "juanchosl/exceptions",
             "version": "1.0.4",
@@ -161,78 +108,28 @@
             "time": "2024-03-05T16:28:02+00:00"
         },
         {
-            "name": "juanchosl/logger",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/JuanchoSL/Logger.git",
-                "reference": "ab9282acaa02dec17c1208b60d3947dade6090ae"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/JuanchoSL/Logger/zipball/ab9282acaa02dec17c1208b60d3947dade6090ae",
-                "reference": "ab9282acaa02dec17c1208b60d3947dade6090ae",
-                "shasum": ""
-            },
-            "require": {
-                "ext-fileinfo": "*",
-                "ext-mbstring": "*",
-                "php": "^7.1 || ^8.0",
-                "psr/log": "3.0.*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "9.6.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "JuanchoSL\\Logger\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Juan Sánchez Lecegui",
-                    "email": "JuanchoSL@hotmail.com",
-                    "homepage": "https://github.com/JuanchoSL/"
-                }
-            ],
-            "description": "Little logger using the PSR interfaces",
-            "homepage": "https://github.com/JuanchoSL/Logger",
-            "keywords": [
-                "debug",
-                "log"
-            ],
-            "support": {
-                "source": "https://github.com/JuanchoSL/Logger/tree/1.1.0"
-            },
-            "time": "2024-12-12T20:40:20+00:00"
-        },
-        {
             "name": "juanchosl/terminal",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JuanchoSL/Terminal.git",
-                "reference": "984ca6b36282f358074ed15272365567a65a510b"
+                "reference": "33c6a7ea954eb59ebe02d32d82b2c4a7471613ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JuanchoSL/Terminal/zipball/984ca6b36282f358074ed15272365567a65a510b",
-                "reference": "984ca6b36282f358074ed15272365567a65a510b",
+                "url": "https://api.github.com/repos/JuanchoSL/Terminal/zipball/33c6a7ea954eb59ebe02d32d82b2c4a7471613ae",
+                "reference": "33c6a7ea954eb59ebe02d32d82b2c4a7471613ae",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "juanchosl/envvars": "^1.0",
                 "juanchosl/exceptions": "^1.0",
-                "juanchosl/logger": "^1.1",
-                "php": "^7.1 || ^8.0"
+                "php": "^7.1 || ^8.0",
+                "psr/log": "3.0.*"
             },
             "require-dev": {
+                "juanchosl/envvars": "^1.0",
+                "juanchosl/logger": "^1.1",
                 "phpstan/phpstan": "1.12.*",
                 "phpunit/phpunit": "9.6.*"
             },
@@ -276,7 +173,7 @@
                 "source": "https://github.com/JuanchoSL/Terminal/tree/master",
                 "issues": "https://github.com/JuanchoSL/Terminal/issues"
             },
-            "time": "2024-12-20T13:40:59+00:00"
+            "time": "2024-12-20T21:20:11+00:00"
         },
         {
             "name": "psr/log",
@@ -399,6 +296,57 @@
                 }
             ],
             "time": "2022-12-30T00:23:10+00:00"
+        },
+        {
+            "name": "juanchosl/logger",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JuanchoSL/Logger.git",
+                "reference": "ab9282acaa02dec17c1208b60d3947dade6090ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JuanchoSL/Logger/zipball/ab9282acaa02dec17c1208b60d3947dade6090ae",
+                "reference": "ab9282acaa02dec17c1208b60d3947dade6090ae",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "ext-mbstring": "*",
+                "php": "^7.1 || ^8.0",
+                "psr/log": "3.0.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "9.6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JuanchoSL\\Logger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Juan Sánchez Lecegui",
+                    "email": "JuanchoSL@hotmail.com",
+                    "homepage": "https://github.com/JuanchoSL/"
+                }
+            ],
+            "description": "Little logger using the PSR interfaces",
+            "homepage": "https://github.com/JuanchoSL/Logger",
+            "keywords": [
+                "debug",
+                "log"
+            ],
+            "support": {
+                "source": "https://github.com/JuanchoSL/Logger/tree/1.1.0"
+            },
+            "time": "2024-12-12T20:40:20+00:00"
         },
         {
             "name": "myclabs/deep-copy",

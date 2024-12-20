@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App;
+namespace JuanchoSL\Backups\Commands;
 
 use JuanchoSL\Backups\Engines\Packagers\ZipEngine;
 use JuanchoSL\Backups\Strategies\BackupNumIncremental;
