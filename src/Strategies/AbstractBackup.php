@@ -70,7 +70,7 @@ abstract class AbstractBackup implements StrategyInterface
     protected function readDirectory($name, $remove): bool
     {
         if (!in_array($name, $this->excluded)) {
-            $contents = glob($name . "\\{.[!.],}*", GLOB_BRACE);
+            $contents = glob($name . DIRECTORY_SEPARATOR . "{.[!.],}*", GLOB_BRACE);
             if (empty($contents)) {
                 $this->engine->addEmptyDir(str_replace($remove . DIRECTORY_SEPARATOR, '', $name));
             } else {
