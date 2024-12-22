@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace JuanchoSL\Backups\Commands;
 
 use JuanchoSL\Backups\Engines\Packagers\ZipEngine;
-use JuanchoSL\Backups\Strategies\BackupNumIncremental;
+use JuanchoSL\Backups\Strategies\BackupDated;
 use JuanchoSL\Terminal\Command;
 use JuanchoSL\Terminal\Contracts\InputInterface;
 use JuanchoSL\Terminal\Enums\InputArgument;
@@ -31,7 +31,7 @@ class BackupCommand extends Command
     protected function execute(InputInterface $input): int
     {
         $parent = $input->getArgument('origin');
-        $obj = new BackupNumIncremental();
+        $obj = new BackupDated();
         $obj->setEngine(new ZipEngine());
         $obj->setDestinationFolder($parent . DIRECTORY_SEPARATOR . $input->getArgument('destiny'));
         if ($input->hasArgument('excluded')) {

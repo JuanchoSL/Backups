@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace JuanchoSL\Backups\Repositories\Compressors;
+namespace JuanchoSL\Backups\Engines\Compressors;
 
 use JuanchoSL\Backups\Contracts\CompressorInterface;
 

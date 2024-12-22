@@ -7,7 +7,6 @@ Little methods collection in order to create distincts type of backups
 ## Install
 ```bash
 composer require juanchosl/backups
-composer update
 ```
 
 ## Packagers
@@ -25,7 +24,7 @@ Aditionally, we have available some compression systems in order to use with oth
 - Bzip
 - Gzip
 - Lzf
-- Zlib
+- Deflate
 
 ## Strategies
 

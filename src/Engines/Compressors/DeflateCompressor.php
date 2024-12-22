@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace JuanchoSL\Backups\Repositories\Compressors;
+namespace JuanchoSL\Backups\Engines\Compressors;
 
 use JuanchoSL\Backups\Contracts\CompressorInterface;
 
-class ZlibCompressor implements CompressorInterface
+class DeflateCompressor implements CompressorInterface
 {
     public function compress(string $text): string
     {
