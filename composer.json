@@ -17,14 +17,9 @@
         }
     ],
     "suggest": {
-        "ext-zip": "*"
+        "ext-zip": "*",
+        "ext-bz2": "*"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/juanchosl/terminal"
-        }
-    ],
     "require": {
         "php": "^7.1 || ^8.0",
         "juanchosl/exceptions": "1.0.*",

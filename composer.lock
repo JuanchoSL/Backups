@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74199696dda068a4befd4bc2f18f2176",
+    "content-hash": "431b2c78f20e8b004c7fe9cfa0b9645f",
     "packages": [
         {
             "name": "juanchosl/exceptions",
@@ -113,12 +113,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JuanchoSL/Terminal.git",
-                "reference": "221db65402f94fef44c1b33f8670ae93d3da6b7d"
+                "reference": "3431072a6e425fd7d435801e65ee961f13af9341"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JuanchoSL/Terminal/zipball/221db65402f94fef44c1b33f8670ae93d3da6b7d",
-                "reference": "221db65402f94fef44c1b33f8670ae93d3da6b7d",
+                "url": "https://api.github.com/repos/JuanchoSL/Terminal/zipball/3431072a6e425fd7d435801e65ee961f13af9341",
+                "reference": "3431072a6e425fd7d435801e65ee961f13af9341",
                 "shasum": ""
             },
             "require": {
@@ -140,19 +140,7 @@
                     "JuanchoSL\\Terminal\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "JuanchoSL\\Terminal\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "tests": [
-                    "vendor/bin/phpunit --configuration phpunit.xml tests"
-                ],
-                "phpstan": [
-                    "vendor/bin/phpstan analyse -c phpstan.neon"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -170,10 +158,10 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/JuanchoSL/Terminal/tree/master",
-                "issues": "https://github.com/JuanchoSL/Terminal/issues"
+                "issues": "https://github.com/JuanchoSL/Terminal/issues",
+                "source": "https://github.com/JuanchoSL/Terminal/tree/master"
             },
-            "time": "2024-12-22T22:38:05+00:00"
+            "time": "2024-12-23T20:46:12+00:00"
         },
         {
             "name": "psr/log",
