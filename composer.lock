@@ -113,12 +113,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JuanchoSL/Terminal.git",
-                "reference": "3431072a6e425fd7d435801e65ee961f13af9341"
+                "reference": "be1c72a3f39880ec15bcfce9a76d2fed7343f2e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JuanchoSL/Terminal/zipball/3431072a6e425fd7d435801e65ee961f13af9341",
-                "reference": "3431072a6e425fd7d435801e65ee961f13af9341",
+                "url": "https://api.github.com/repos/JuanchoSL/Terminal/zipball/be1c72a3f39880ec15bcfce9a76d2fed7343f2e3",
+                "reference": "be1c72a3f39880ec15bcfce9a76d2fed7343f2e3",
                 "shasum": ""
             },
             "require": {
@@ -161,7 +161,7 @@
                 "issues": "https://github.com/JuanchoSL/Terminal/issues",
                 "source": "https://github.com/JuanchoSL/Terminal/tree/master"
             },
-            "time": "2024-12-23T20:46:12+00:00"
+            "time": "2024-12-23T22:39:15+00:00"
         },
         {
             "name": "psr/log",
