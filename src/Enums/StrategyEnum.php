@@ -9,5 +9,6 @@ enum StrategyEnum
     case NUM_INCREMENTAL;
     case NUM_ROTATE;
     case DATE;
+    case UNIQUE;
 
 }
